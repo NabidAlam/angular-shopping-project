@@ -10,15 +10,15 @@ import { Ingredient } from '../shared/ingredient.model';
 export class ShoppingListComponent implements OnInit {
 
   ingredients: Ingredient[] = [
-    new Ingredient('Applies1', 501),
-    new Ingredient('Applies2', 502),
-    new Ingredient('Applies3', 503),
-    new Ingredient('Applies4', 504),
-    new Ingredient('Applies5', 505)
+    new Ingredient('Applies1', 5),
+    new Ingredient('Applies2', 50)
   ];
   constructor() { }
 
   ngOnInit() {
   }
 
+  onIngredientAdded(ingredient: Ingredient) {
+  this.ingredients.push(ingredient);
+  }
 }
